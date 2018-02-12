@@ -2,19 +2,37 @@
 @import url('../lib/fontawesome/css/fontawesome-all.min.css');
 body {
     padding-top: 20px;
-    padding-bottom: 200px;
+    padding-bottom: 50px;
     font-family: 'Roboto', sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 100%;
+  }
+
+  .container {
+    position: relative;
   }
   
-  .footer {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    margin-top: 40px;
-    border-top: 1px solid #eee;
-    position:  fixed;
+  .footer-container {
+    position: absolute;
     bottom: 0;
-    left: 40px;
-    right: 40px;
+    left: 0;
+    right: 0;
+  }
+  footer.footer {
+    padding: 15px 15px 15px 30px;
+    margin: 20px 0px;
+    border: 1px solid #e5e5e5;
+    bottom: 0;
+    width: 100%;
+    background-image: linear-gradient(to bottom, #f7f7f7 0%,#eee 100%);
+    border-radius: 3px;
+  }
+
+  footer.footer p {
+    margin: 0px;
   }
   
   /* Main marketing message and sign up button */
@@ -66,8 +84,9 @@ body {
     font-weight: 100;
   }
   /* Home page elements */
-  .home-media-image {
-    width: 25%;  
+  .home-media-icon {
+    font-size: 48px;
+    color: rgba(0, 0, 0, 0.50);
   }
   
   /*Login page*/  

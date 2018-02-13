@@ -114,3 +114,36 @@ body {
     left: 10px;
     color: aliceblue;
   }
+/* Event page */
+
+  .events-card-deck .card {
+    box-shadow: 1px 1px 2px;
+    color: black;
+  }
+  .events-card-deck .card:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 6px;
+    text-decoration: none;
+  }
+
+  .events-card-deck .card .btn-link {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+  }
+  .card .btn-secondary {
+    
+  }
+
+  .events-card-deck .card .btn-link:hover {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .events-search-row {
+    margin-bottom: 15px;
+  }
+
+  .events-search-row button {
+    transform: scale(-1, 1);
+  }

@@ -48,31 +48,65 @@
         </nav>
       </div>
 
-      <!-- Jumbotron -->
-      <div class="jumbotron">
-        <h1>Marketing stuff!</h1>
-        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.</p>
-        <p><a class="btn btn-lg btn-success" href="#" role="button">Get started today</a></p>
-      </div>
-
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-lg-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-lg-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
-       </div>
-        <div class="col-lg-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
-          <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
-        </div>
-      </div>
+      <h1>Licitálható jegyek listája</h1>
+      <table class="table table-striped">
+        <thead class="thead-dark">
+          <tr>
+            <th style="min-width: 30%;" scope="col">Esemény neve</th>
+            <th scope="col">Időpont</th>
+            <th class="d-none d-md-table-cell" scope="col">Eladó neve</th>
+            <th class="text-right d-none d-md-table-cell" style="width: 16%;" scope="col">Hány darab</th>
+            <th style="width: 18%;" scope="col">Licitek megtekintése</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-toggle="tooltip" data-html="true" data-placement="bottom" title="<strong>Még 3 napig lehet licitálni</strong><br/>Az esemény megtekintéséhez kattints ide!"><a href="event.html?id=1">Sziget Fesztivál</a></th>
+            <td>2018.08.03. 13:00</td>
+            <td class="d-none d-md-table-cell">Tóth Ottó</td>
+            <td class="text-right d-none d-md-table-cell">2 db</td>
+            <td>
+              <a href="bid.html?id=1">tovább a licithez</a>
+            </td>
+          </tr>
+          <tr>
+            <td data-toggle="tooltip" data-html="true" data-placement="bottom" title="<strong>Még 3 napig lehet licitálni</strong><br/>Az esemény megtekintéséhez kattints ide!"><a href="event.html?id=1">Sziget Fesztivál</a></th>
+              <td>2018.08.03. 13:00</td>
+              <td class="d-none d-md-table-cell">Tóth Ottó</td>
+              <td class="text-right d-none d-md-table-cell">2 db</td>
+              <td>
+                <a href="bid.html?id=1">tovább a licithez</a>
+              </td>
+            </tr>
+            <tr>
+                <td data-toggle="tooltip" data-html="true" data-placement="bottom" title="<strong>Még 3 napig lehet licitálni</strong><br/>Az esemény megtekintéséhez kattints ide!"><a href="event.html?id=1">Sziget Fesztivál</a></th>
+                <td>2018.08.03. 13:00</td>
+                <td class="d-none d-md-table-cell">Tóth Ottó</td>
+                <td class="text-right d-none d-md-table-cell">2 db</td>
+                <td>
+                  <a href="bid.html?id=1">tovább a licithez</a>
+                </td>
+              </tr>
+              <tr>
+                <td data-toggle="tooltip" data-html="true" data-placement="bottom" title="<strong>Még 3 napig lehet licitálni</strong><br/>Az esemény megtekintéséhez kattints ide!"><a href="event.html?id=1">Sziget Fesztivál</a></th>
+                <td>2018.08.03. 13:00</td>
+                <td class="d-none d-md-table-cell">Tóth Ottó</td>
+                <td class="text-right d-none d-md-table-cell">2 db</td>
+                <td>
+                  <a href="bid.html?id=1">tovább a licithez</a>
+                </td>
+                </tr>
+                <tr>
+                <td data-toggle="tooltip" data-html="true" data-placement="bottom" title="<strong>Még 3 napig lehet licitálni</strong><br/>Az esemény megtekintéséhez kattints ide!"><a href="event.html?id=1">Sziget Fesztivál</a></th>
+                <td>2018.08.03. 13:00</td>
+                <td class="d-none d-md-table-cell">Tóth Ottó</td>
+                <td class="text-right d-none d-md-table-cell">2 db</td>
+                <td>
+                  <a href="bid.html?id=1">tovább a licithez</a>
+                </td>
+              </tr>
+        </tbody>
+      </table>
 
     </div> <!-- /container -->
 
@@ -90,5 +124,10 @@
     <script src="lib/jquery-3.1.1.slim.min.js"></script>
     <script src="lib/popper.min.js"></script>
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      });
+    </script>
   </body>
 </html>

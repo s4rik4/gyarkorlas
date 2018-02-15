@@ -131,10 +131,7 @@ body {
     right: 15px;
     bottom: 15px;
   }
-  .card .btn-secondary {
-    
-  }
-
+  
   .events-card-deck .card .btn-link:hover {
     text-decoration: none;
     cursor: pointer;
